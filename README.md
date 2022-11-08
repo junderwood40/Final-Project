@@ -15,3 +15,16 @@ sensor.when_out_of_range = led.off
 
 pause()
 
+![image](https://user-images.githubusercontent.com/111941742/200642647-f46e8368-7bea-4bfe-84b7-c9605aa5a2bd.png)
+
+from gpiozero import LED, Button
+from signal import pause
+
+led = LED(17)
+button = Button(2)
+
+button.when_pressed = led.on
+button.when_released = led.off
+
+pause()
+
