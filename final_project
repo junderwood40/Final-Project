@@ -1,0 +1,41 @@
+#!/bin/python
+
+from gpiozero import LED, DistanceSensor, Buzzer, Button
+from time import sleep
+from signal import pause
+
+blue = LED(13)
+red = LED(26)
+sensor = DistanceSensor(23, 24)
+button = Button(2)
+buzzer = Buzzer(16)
+
+
+while True: 
+    if button.is_pressed:
+        distance = sensor.distance *100
+        print("Distance: %.2f" % distance)
+        sleep(1)
+    
+ 
+        if distance <= 15 and distance >10:
+            red.on()
+            sleep(.5)
+            red.off()
+
+        if distance <= 10 and distance >5:
+            red.on()
+            sleep(.25)
+            red.off()
+            blue.on()
+            sleep(.25)
+            blue.off()
+      
+        if distance <=5:
+            red.on()
+            sleep(.1)
+            red.off()
+            blue.on()
+            sleep(.1)
+            blue.off()
+
