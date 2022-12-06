@@ -4,6 +4,7 @@ from gpiozero import LED, DistanceSensor, Buzzer, Button
 from time import sleep
 from signal import pause
 
+## establish the components
 blue = LED(13)
 red = LED(26)
 sensor = DistanceSensor(23, 24)
@@ -12,17 +13,19 @@ buzzer = Buzzer(16)
 
 
 while True: 
+    ## start only when button is pressed
     if button.is_pressed:
         distance = sensor.distance *100
         print("Distance: %.2f" % distance)
         sleep(1)
     
- 
+        ## start flashing red lights when distance is between 10 to 15cm
         if distance <= 15 and distance >10:
             red.on()
             sleep(.5)
             red.off()
 
+        ## start flashing red and blue lights at .25 seconds when distance is between 5 to 10cm
         if distance <= 10 and distance >5:
             red.on()
             sleep(.25)
@@ -31,6 +34,7 @@ while True:
             sleep(.25)
             blue.off()
       
+        ## start flashing red and blue lights at .1 seconds when distance is 5cm or less
         if distance <=5:
             red.on()
             sleep(.1)
