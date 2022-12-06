@@ -9,8 +9,6 @@ blue = LED(13)
 red = LED(26)
 sensor = DistanceSensor(23, 24)
 button = Button(2)
-buzzer = Buzzer(16)
-
 
 while True: 
     ## start only when button is pressed
