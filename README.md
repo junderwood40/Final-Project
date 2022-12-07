@@ -25,10 +25,7 @@ Install the LED components by connecting the Blue LED to the breadboard and usin
 
 ![LEDs](https://user-images.githubusercontent.com/111941742/206002096-9cedcd59-df94-4675-845b-c2893dce13f1.jpg)
 
-Distance sensor component:
-- DistanceSensor (GPIO 23, GPIO 24)
-   - Raspberry Pi:
-    - GPIO 23, GPIO 24 and GND
+Install the Distance Sensor by connecting the sensor to the breadboard and using the jumper wires to connect the corresponding positive cables to GPIO 23 and the second positive cable to GPIO 24.  Using a resistor going from the negative using a jumper cable from the negative power rail to a GND pin on the Raspberry Pi. Using another resistor going from the negative using a jumper cable from the negative power rail to a GND pin on the Raspberry Pi.
 
 
 ![DistanceSensor](https://user-images.githubusercontent.com/111941742/206002285-104a0a3d-eeb4-4911-a17d-624c7ed5e23c.jpg)
