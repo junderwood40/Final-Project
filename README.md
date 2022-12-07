@@ -14,10 +14,8 @@ Resources Needed:
     - Distance Sensor
  - Jumper Wires
 
-Button component:
- - Button 
-    - GPIO 2 and GND
 
+Install the Button component by connecting the button to the breadboard and using the jumper wires to connect the corresponding positive cable to GPIO 2 and the negative to a GND pin on the Raspberry Pi.
 
 ![BUTTON](https://user-images.githubusercontent.com/111941742/206001918-a88c5148-4b2b-4d8e-bf20-770fc5234b5b.jpg)
 
