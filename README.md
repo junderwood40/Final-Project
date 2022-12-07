@@ -20,11 +20,7 @@ Install the Button component by connecting the button to the breadboard and usin
 ![BUTTON](https://user-images.githubusercontent.com/111941742/206001918-a88c5148-4b2b-4d8e-bf20-770fc5234b5b.jpg)
 
 
-LED components:
- - Blue LED 
-     - GPIO 13 and GND  
- - Red LED
-    - GPIO 26 and GND 
+Install the LED components by connecting the Blue LED to the breadboard and using the jumper wires to connect the corresponding positive cable to GPIO 13 on the Raspberry Pi. Using a resistor going from the negative to the negative power rail then using a jumper cable from the power rail. For the Red LED by connect it to the breadboard and using the jumper wires to connect the corresponding positive cable to GPIO 26 on the Raspberry Pi. Using another resistor going from the negative to the negative power rail. Then using a jumper cable from the negative power rail to a GND pin on the Raspberry Pi. 
 
 
 ![LEDs](https://user-images.githubusercontent.com/111941742/206002096-9cedcd59-df94-4675-845b-c2893dce13f1.jpg)
